@@ -16,8 +16,8 @@ add_library(cctalk STATIC ${cctalk_SOURCES})
 
 target_link_libraries(cctalk
 	PUBLIC
-		Qt5::Concurrent
-		Qt5::SerialPort
+		Qt6::Concurrent
+		Qt6::SerialPort
 	PRIVATE
 		compiler_warnings
 		cctalk_helpers

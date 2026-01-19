@@ -32,21 +32,15 @@ CctalkDevice::CctalkDevice()
 	connect(&event_timer_, &QTimer::timeout, this, &CctalkDevice::timerIteration);
 }
 
-
-
 CctalkLinkController& CctalkDevice::getLinkController()
 {
 	return link_controller_;
 }
 
-
-
 void CctalkDevice::setBillValidationFunction(BillValidatorFunc validator)
 {
 	bill_validator_func_ = std::move(validator);
 }
-
-
 
 bool CctalkDevice::initialize(const std::function<void(const QString& error_msg)>& finish_callback)
 {

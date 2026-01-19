@@ -25,8 +25,8 @@ target_link_libraries(test_gui
 		compiler_warnings
 		cctalk
 		cctalk_helpers
-		Qt5::Widgets
-		# Qt5::Gui
+		Qt6::Widgets
+		#Qt6::Gui
 )
 
 target_include_directories(

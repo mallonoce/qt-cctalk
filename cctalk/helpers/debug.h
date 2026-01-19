@@ -20,7 +20,6 @@ License: BSD-3-Clause
 #include <ostream>
 #ifndef APP_DISABLE_QT
 	#include <QString>
-	#include <QStringRef>
 #endif
 
 
